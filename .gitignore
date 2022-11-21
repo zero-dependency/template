@@ -3,3 +3,7 @@
 **/dist
 *.log
 coverage
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+.DS_Store
