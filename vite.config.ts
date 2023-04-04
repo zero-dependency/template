@@ -8,9 +8,14 @@ export default defineConfig({
   plugins: [dts()],
   build: {
     sourcemap: true,
+    minify: true,
     target: 'esnext',
     lib: {
-      formats: ['cjs', 'es', 'umd'],
+      formats: [
+        'cjs',
+        'es',
+        'umd'
+      ],
       entry: resolve(__dirname, 'src/index.ts'),
       fileName: (format) => `index.${format}.js`,
       name
